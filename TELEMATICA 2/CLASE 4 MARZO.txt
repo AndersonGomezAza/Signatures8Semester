@@ -1,0 +1,25 @@
+Subnetting FLSM (Fixed Lenght Subnet Mask)
+	> Todas las subredes quedan iguales
+	> 172.16.5.0 Mascara de subred 255.255.0.0
+	> # de redes y # de host/subred iguales
+
+Se creo despues VLSM ( Variable Lenght Subnet Mask )
+	> Da la facilidad de crear subredes con host variables
+	> Esto da facilidad de acceder a redes que se necesiten dependiendo el departamento
+
+Ip publica y privada
+	> Publica
+		> Son con las que salimos a internet para mayor facilidad o la nube
+		> Tambien se hace por el agotamiento de las direcciones IP y con esto solo se alquilan no se pueden vender
+	> Privada
+		> Son las redes que se utilizan dentro de la empresa confidencial
+
+	> Para comunicar estas direcciones Ip se necesita en el route un NAT (Network Adress Translate)
+
+	> EJEMPLO
+		> Red Privada 172.16.5.0 con Mascara 0/16 (255.255.0.0)
+		> Red Publica 180.125.8.32
+		> El NAT es el que hace traduccion y enlace de la red publica y privada 
+		> Cualquier subnet debe convertirse en la primera red privada para que el NAT la pueda traducir y con esto salir a la nube 
+
+Supernetting -> Sumarización    
