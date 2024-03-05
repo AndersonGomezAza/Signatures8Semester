@@ -23,3 +23,25 @@ Ip publica y privada
 		> Cualquier subnet debe convertirse en la primera red privada para que el NAT la pueda traducir y con esto salir a la nube 
 
 Supernetting -> Sumarización    
+	> Se comparan todas las diferentes SubRedes que se creen y se hace la union AND para sumar todos los 1 y con esto nos da la red de referencia 
+
+TCP/IP
+	>Ip Clases
+		>Tipo A 
+			> Rango de red: 1.0.0.0 - 126.255.255.255
+		>Tipo B
+			> Rango de red: 128.0.0.0 - 191.255.255.255
+		>Tipo C
+			> Rango de red: 192.0.0.0 - 223.255.255.255 
+
+	> Red 0.0.0.0 Es una red indeterminada y no se usa -  no se puede direccionar nada
+	> Red 127 Es una Red de local host 
+	> La LIANA Es la que asigna las Ips
+
+	> Direcciones Privadas para utilizar que no salen a internet
+		>Tipo A 
+			> Rango de red: 10.0.0.0 - 10.255.255.255
+		>Tipo B
+			> Rango de red: 172.16.0.0 - 172.31.255.255
+		>Tipo C
+			> Rango de red: 192.168.0.0 - 192.168.255.255 
